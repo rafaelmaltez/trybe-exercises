@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    background-color:rgb(0, 0, 0);
+    color: white;
+    font-family: 'Indie Flower', cursive;
+}
+.header-title {
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.5em;
+}
+nav {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    width: 10%;
+    font-size: 2em;
+}
+
+nav a {
+    color: rgb(244, 248, 7);
+}
+
+.content {
+    width: 100%;
+    margin: 2%;
+}
+
+article {
+    width: 75%;
+    display: inline-block;
+    
+}
+
+h1, h2, h3 {
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.curiosity-line {
+    width: 100%;
+    display: inline;
+    text-align: center;
+}
+
+.curiosity-block {
+    width: 45%;
+    display: inline-block;
+
+}
+
+aside {
+    display: inline-block;
+    width: 15%;     
+    margin-right: 5%;
+    float: right;
+    
+}
+
+.float-right {
+    float: right;
+}
+
