@@ -6,20 +6,28 @@ body {
     background-color:rgb(0, 0, 0);
     color: white;
     font-family: 'Indie Flower', cursive;
+    margin: 0;
 }
 .header-title {
-    text-align: center;
+    text-align: left !important;
     font-family: 'Architects Daughter', cursive;
     font-size: 1.5em;
+    margin:0;
+}
+.main-header {
+    
+    margin: 0;
 }
 nav {
-    text-align: center;
+    text-align: left;
+    margin-top: 0;
 }
 
 nav li {
     display: inline-block;
-    width: 10%;
+    width: auto;
     font-size: 2em;
+    margin-right: 10px;
 }
 
 nav a {
@@ -31,6 +39,17 @@ nav a {
     margin: 2%;
 }
 
+.what-is {
+    text-align: center;
+    
+}
+
+#stomatopoda-profile-pic {
+    width: 35%;
+    border-radius: 100%;
+    border: 3px ridge rgb(150, 0, 125);
+}
+
 article {
     width: 75%;
     display: inline-block;
@@ -39,7 +58,7 @@ article {
 
 h1, h2, h3 {
     font-family: 'Architects Daughter', cursive;
-    text-align: center;
+    
 }
 
 p {
