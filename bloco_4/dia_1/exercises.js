@@ -66,7 +66,25 @@ if(variavel1 > 0) {
 } else {
     console.log("A variavel é negativa");
 }
+console.log('');
 
+//Exercicio 5
+console.log("Exercicio 5: Conferindo se tres angulos são um triangulo")
+
+let ang1 = 44;
+let ang2 = 56;
+let ang3 = 80;
+console.log("O primeiro angulo é: " + ang1)
+console.log("O segundo angulo é: " + ang2)
+console.log("O terceiro angulo é: " + ang3)
+console.log("OS angulos formam um triangulo valido? True or false?")
+
+if(ang1 + ang2 + ang3 == 180) {
+    console.log("true")
+}else {
+    console.log('false');
+}
+console.log('')
 
 
 
