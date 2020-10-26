@@ -68,4 +68,14 @@ if(numerosImpares == 0){
 }
 console.log(" ");
 console.log("----------------------------------");
-//Exercicio 6
+//Exercicio 7
+console.log("Exercicio 7: Utilizando for, descubra qual o menor valor contido no array e imprima-o")
+let menorValor = numbers[0];
+for (let i = 1; i < numbers.length; i++){
+    if (numbers[i] < menorValor) {
+        menorValor = numbers[i];
+    }
+}
+console.log(`O menor valor é: ${menorValor}`);
+console.log(" ");
+console.log("----------------------------------");
