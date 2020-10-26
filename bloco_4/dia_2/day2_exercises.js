@@ -79,3 +79,10 @@ for (let i = 1; i < numbers.length; i++){
 console.log(`O menor valor é: ${menorValor}`);
 console.log(" ");
 console.log("----------------------------------");
+//Exercicio 8
+console.log("Exercicio 8: Utilizando for, crie uma array que vá de 1 até 25 e imprima o resultado")
+let arrayAteVinteCinco =[];
+for (let i = 0; i <= 24; i +=1) {
+    arrayAteVinteCinco[i] = i + 1;
+}
+console.log(`Array ate 25: ${arrayAteVinteCinco} `);
