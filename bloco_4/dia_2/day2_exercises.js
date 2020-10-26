@@ -49,4 +49,23 @@ for (let i = 0; i < numbers.length; i++){
         maiorValor = numbers[i];
     }
 }
-console.log(`O maior valor é: ${maiorValor}`)
+console.log(`O maior valor é: ${maiorValor}`);
+console.log(" ");
+console.log("----------------------------------");
+//Exercicio 6
+console.log('Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado"');
+console.log(" ");
+let numerosImpares = 0;
+for (let i = 0; i < numbers.length; i++){
+    if(numbers[i] % 2 != 0) {
+        numerosImpares +=1;
+    }
+}
+if(numerosImpares == 0){
+    console.log("Nenhum valor impar encontrado");
+} else {
+    console.log(`Existem ${numerosImpares} numeros impares no array`);
+}
+console.log(" ");
+console.log("----------------------------------");
+//Exercicio 6
