@@ -18,4 +18,14 @@ for (let i = 0; i < numbers.length; i++) {
 console.log(" ");
 console.log(`O resultado da soma de todos os elementos é: ${resultadoSoma}`);
 console.log(" ");
-
+console.log("----------------------------------");
+//Exercicio 3
+console.log("Exercicio 3: calcule e imprima a média aritmética dos valores contidos no array");
+console.log(" ");
+let mediaAritimetica = 0;
+for (let i = 0; i < numbers.length; i++) {
+    mediaAritimetica = resultadoSoma / numbers.length;
+}
+console.log(`A media aritimetica é: ${mediaAritimetica}`);
+console.log(" ");
+console.log("----------------------------------");
