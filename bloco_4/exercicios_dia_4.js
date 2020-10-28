@@ -40,6 +40,11 @@ let info2 = {
     nota: "O último MacPatinhas",
     recorrente: "Sim"
   };
+
+console.log("")
+console.log("_________________")
+console.log("")
+
   //Valor esperado no console:
 
   //Margarida e Tio Patinhas
@@ -47,3 +52,12 @@ let info2 = {
 //Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPatinhas
 //Ambos recorrentes // Atenção para essa última linha!
 
+
+
+for (let chave in info) {
+    if (info[chave] != info2[chave]){
+    console.log(`${info[chave]} e ${info2[chave]}`);
+} else {
+    console.log("Ambos recorrentes");
+}
+}
