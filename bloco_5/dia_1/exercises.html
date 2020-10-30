@@ -59,7 +59,9 @@
         function mudaParagrafo(elemento, numero, texto){
             document.getElementsByTagName(elemento)[numero].innerHTML= texto;
         }
+
         mudaParagrafo('p',0, myselfInTwoYears);
+
         mudaParagrafo('p',2, nome);
         //Exercicio 2
 
@@ -80,6 +82,27 @@
             document.getElementsByClassName('title')[0].innerHTML= "Exercício 5.1 - JavaScripit"
         }
         corrigeTitulo();
+        /*
+        //Exercicio 5
+        function capitalizeTag(nomedatag, indicedatag) {
+           document.getElementsByTagName(nomedatag)[indicedatag].innerHTML;
+          
+        }           
+        capitalizeTag('p',0); 
+        */
+
+        //Exercicio 6
+
+        function exibeConteudoTag(nomedatag) {
+            let tagParaExibir = document.getElementsByTagName(nomedatag);
+            for (i=0; i< tagParaExibir.length; i++){
+                console.log(tagParaExibir[i].innerHTML);
+            }
+        }
+
+        exibeConteudoTag('p');
+
+
     </script>
   </body>
 </html>
