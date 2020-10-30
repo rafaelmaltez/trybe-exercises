@@ -71,10 +71,10 @@
         coloreClasseDeVerde();
 
         //Exercicio 3
-      function coloreClasseDeBranco() {
-        document.getElementsByClassName('center-content')[0].style.backgroundColor="white";
+      function coloreClasseDeBranco(classe, indicedaclasse) {
+        document.getElementsByClassName(classe)[indicedaclasse].style.backgroundColor="white";
         }
-        coloreClasseDeBranco();
+        coloreClasseDeBranco('center-content',0);
 
         //Exercicio 4
 
