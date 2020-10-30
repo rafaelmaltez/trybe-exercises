@@ -53,12 +53,14 @@
         */
 
         //Exercicio 1
+        let myselfInTwoYears = "Em dois anos me vejo como um excelente desenvolvedor, com um trabalho remoto que me paga bem e me permita ter liberdade geografica"
+        let nome = "Rafael Maltez"
 
-        function mudaParagrafo(){
-            document.getElementsByTagName('p')[0].innerHTML="Em dois anos me vejo como um excelente desenvolvedor, com um trabalho remoto que me paga bem e me permita ter liberdade geografica"
+        function mudaParagrafo(elemento, numero, texto){
+            document.getElementsByTagName(elemento)[numero].innerHTML= texto;
         }
-        mudaParagrafo();
-
+        mudaParagrafo('p',0, myselfInTwoYears);
+        mudaParagrafo('p',2, nome);
         //Exercicio 2
 
         function coloreClasseDeVerde() {
@@ -71,6 +73,13 @@
         document.getElementsByClassName('center-content')[0].style.backgroundColor="white";
         }
         coloreClasseDeBranco();
+
+        //Exercicio 4
+
+        function corrigeTitulo() {
+            document.getElementsByClassName('title')[0].innerHTML= "Exercício 5.1 - JavaScripit"
+        }
+        corrigeTitulo();
     </script>
   </body>
 </html>
