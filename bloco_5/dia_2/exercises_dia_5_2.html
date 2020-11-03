@@ -58,11 +58,30 @@
   <body>
     <script>
         let h1 = document.createElement('h1');
+        h1.innerHTML = 'Exercício 5.2 - JavaScript DOM';
         document.body.appendChild(h1);
 
-        let div = document.createElement('div');
-        div.className = 'main-content';
-        document.body.appendChild(div)
+        let divMain = document.createElement('div');
+        divMain.className = 'main-content';
+        document.body.appendChild(divMain);
+
+        let divCenter = document.createElement('div');
+        divCenter.className = 'center-content';
+
+        document.querySelector('.main-content').appendChild(divCenter);
+
+        let paragraph = document.createElement('p');
+        paragraph.innerHTML = 'Olá mundo!';
+        document.querySelector('.center-content').appendChild(paragraph);
+
+        let leftDiv = document.createElement('div');
+        leftDiv.className = 'left-content';
+        document.querySelector('.main-content').appendChild(leftDiv);
+        
+        let rightDiv = document.createElement('div');
+        rightDiv.className = 'right-content';
+        document.querySelector('.main-content').appendChild(rightDiv);
+
 
         
 
