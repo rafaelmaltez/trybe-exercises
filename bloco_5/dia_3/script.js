@@ -20,14 +20,21 @@ function createDaysOfTheWeek() {
     const monthDaysList = document.getElementById('days');
 
     for (let index =0; index < dezDaysList.length; index++) {
-        const monthDay = dezDaysList[index];
+        const monthDay = dezDaysList[index];      
         const monthDayItem = document.createElement('li');
+        monthDayItem.className = 'day';        
         monthDayItem.innerHTML = monthDay;
+        if(monthDayItem.innerHTML == 24 || monthDayItem.innerHTML == 25 || monthDayItem.innerHTML == 31){
+            monthDayItem.className = 'day holiday';
+        }
         monthDaysList.appendChild(monthDayItem);
+
+       
     }
   }
-
+  
   createDaysOfTheMonth();
+
 
   //Exercicio 2
 
@@ -36,7 +43,11 @@ function createDaysOfTheWeek() {
       button.innerHTML = nomeDoBotao;
       button.id = "btn-holiday";
       const btnsContainer = document.querySelector('.buttons-container');
-      btnsContainer.appendChild(button);
+      btnsContainer.appendChild(button);      
   }
 
   criaBotao("Feriados");
+
+  //Exercicio 3
+
+  
