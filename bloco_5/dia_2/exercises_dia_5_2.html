@@ -58,6 +58,7 @@
   <body>
     <script>
         let h1 = document.createElement('h1');
+        h1.className = 'title'
         h1.innerHTML = 'Exercício 5.2 - JavaScript DOM';
         document.body.appendChild(h1);
 
@@ -67,7 +68,6 @@
 
         let divCenter = document.createElement('div');
         divCenter.className = 'center-content';
-
         document.querySelector('.main-content').appendChild(divCenter);
 
         let paragraph = document.createElement('p');
@@ -82,7 +82,29 @@
         rightDiv.className = 'right-content';
         document.querySelector('.main-content').appendChild(rightDiv);
 
+        let image = document.createElement('img');
+        image.src = 'https://picsum.photos/200';
+        image.className = 'small-image';
+        document.querySelector('.left-content').appendChild(image);
+        
+        let numerais = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
 
+        let lista = document.createElement('ul')
+        document.querySelector('.rigth-content').appendChild(lista);
+
+        for (let index =0; index<numerais.length; index++) {
+          let li = document.createElement('li');          
+          document.querySelector('.rigth-content ul').appendChild(li);
+          li.innerHTML = numerais[index];
+        }
+
+        let h3 = document.createElement('h3');
+        h3.className = 'description'
+        for (let i =0; i<2; i++) {
+            document.querySelector('main-content').appendChild(h3);
+        }
+
+        
         
 
       // COLOQUE SEU CÓDIGO AQUI
