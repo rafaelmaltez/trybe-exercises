@@ -26,6 +26,7 @@ function createDaysOfTheWeek() {
         if(monthDayItem.innerHTML == 24 || monthDayItem.innerHTML == 25 || monthDayItem.innerHTML == 31){
             monthDayItem.className = 'day holiday';
         }
+        if(monthDayItem.innerHTML == 24 || monthDayItem.innerHTML == 25 || monthDayItem.innerHTML == 31)
         monthDaysList.appendChild(monthDayItem);
 
        
@@ -38,19 +39,16 @@ function createDaysOfTheWeek() {
       const button = document.createElement('button');
       button.innerHTML = nomeDoBotao;
       button.id = "btn-holiday";
-      button.addEventListener('click', coloreFeriados);      
+
       const btnsContainer = document.querySelector('.buttons-container');
       btnsContainer.appendChild(button);      
   }
-
   criaBotao("Feriados");
 
   //Exercicio 3
+  function coloreFeriados(){
 
-function coloreFeriados(){
-  let feriados = document.querySelectorAll('.holiday');
-  for (index =0; index < feriados.length; index++){
-      feriados[index].style.backgroundColor = 'yellow';
-  }  
+  if (monthDayItem.className == 'holiday') {
+    monthDayItem.style.backgroundColor
+  }
 }
-
