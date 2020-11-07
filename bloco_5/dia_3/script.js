@@ -47,8 +47,17 @@ function createDaysOfTheWeek() {
 
   //Exercicio 3
   function coloreFeriados(){
-
-  if (monthDayItem.className == 'holiday') {
-    monthDayItem.style.backgroundColor
+    let button = document.getElementById('btn-holiday');
+    button.addEventListener('click', mudaCor)
+    function mudaCor(){
+      let feriados = document.getElementsByClassName('holiday');
+      for (let index=0; index < feriados.length; index +=){
+        if(feriados.style.backgroundColor= 'rgb(238,238,238)'){
+          feriados.style.backgroundColor = 'yellow';
+        }else {
+          feriados.style.backgroundColor = 'rgb(238,238,238)';
+        }
+      }
   }
 }
+  

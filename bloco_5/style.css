@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+
+
+h1 {
+    text-align: center;
+    padding: 30px;
+    color: cornflowerblue;
+    
+}
+main {
+    width: 800px;
+    margin-right: 5%;
+    margin-left: auto;
+    padding: 20px;
+  
+   
+}
+
+aside {
+    width: 400px;
+    float:left;
+    position: absolute;
+    left: 10%;
+    top: 200px;
+    
+}
+p {
+    margin-top: 30px;
+    text-align: justify;
+    color: rgb(124, 161, 230);
+}
+
+footer {
+    
+    display: block;
+    width: 100%;
+    
+}
+
+footer p {
+    text-align: center;
+    color: cadetblue;
+
+}
