@@ -12,25 +12,30 @@ function createDaysOfTheWeek() {
   };
   
   createDaysOfTheWeek();
+
+
+
+
+
+  /*
   
   //Exercicio 1
   function createDaysOfTheMonth() {
     const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
     const monthDaysList = document.getElementById('days');
-
     for (let index =0; index < dezDaysList.length; index++) {
         const monthDay = dezDaysList[index];      
         const monthDayItem = document.createElement('li');
         monthDayItem.className = 'day';        
         monthDayItem.innerHTML = monthDay;
-        if(monthDayItem.innerHTML == 24 || monthDayItem.innerHTML == 25 || monthDayItem.innerHTML == 31){
+        monthDaysList.appendChild(monthDayItem);
+       if(monthDayItem.innerHTML == 24 || monthDayItem.innerHTML == 25 || monthDayItem.innerHTML == 31){
             monthDayItem.className = 'day holiday';
         }
-        if(monthDayItem.innerHTML == 24 || monthDayItem.innerHTML == 25 || monthDayItem.innerHTML == 31)
-        monthDaysList.appendChild(monthDayItem);
-
-       
+        if(monthDayItem.innerHTML == 24 || monthDayItem.innerHTML == 25 || monthDayItem.innerHTML == 31){
+          monthDaysList.appendChild(monthDayItem);
     }
+    
   }  
   createDaysOfTheMonth();
 
@@ -39,12 +44,12 @@ function createDaysOfTheWeek() {
       const button = document.createElement('button');
       button.innerHTML = nomeDoBotao;
       button.id = "btn-holiday";
-
       const btnsContainer = document.querySelector('.buttons-container');
       btnsContainer.appendChild(button);      
   }
   criaBotao("Feriados");
 
+  
   //Exercicio 3
   function coloreFeriados(){
     let button = document.getElementById('btn-holiday');
@@ -60,4 +65,6 @@ function createDaysOfTheWeek() {
       }
   }
 }
-  
+function coloreFeriados();
+
+*/
