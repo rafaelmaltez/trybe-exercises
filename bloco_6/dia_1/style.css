@@ -2,26 +2,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  height: 100%;
+  position: relative;
 }
 
 .form-container {
+  padding: 25px;
   width: 60%;
+  height: 100%;
   margin: auto;
+  margin-top: 0; 
+  position: relative;
 }
 
-input {
-  width: 70%;
-  padding: 5px;
-  
+h1 {
+  text-align: center;
+  color: rgba(87, 87, 87, 0.568);
+  margin-bottom: 20px;
 }
-label {
-    margin-bottom: 5px;
+
+.input[type='text'], .input[type='email']  {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid rgb(160, 159, 159);
+  border-radius: 5px;  
+}
+
+.input[type='text']:focus {
+  background-color:rgb(151, 245, 232);
+  border: 2px solid grey;
 }
 
 fieldset {
-  width: 50%;
-  margin: auto;
-  margin-top: 45px;
+  color: rgb(95, 90, 90);
+  width: 40%;
+  margin: auto;  
+  border: 1px solid rgb(160, 159, 159);
+  border-radius: 5px;
+}
+
+legend {
+  color: grey;
 }
 
 fieldset div {
