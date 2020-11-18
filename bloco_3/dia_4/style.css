@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    background-color:rgb(0, 0, 0);
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+}
+.header-title {
+    text-align: left !important;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.5em;
+    margin:0;
+}
+.main-header {
+    
+    margin: 0;
+}
+nav {
+    text-align: left;
+    margin-top: 0;
+}
+
+nav li {
+    display: inline-block;
+    width: auto;
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+nav a {
+    color: rgb(244, 248, 7);
+}
+
+.content {
+    width: 100%;
+    margin: 2%;
+}
+
+.what-is {
+    text-align: center;
+    
+}
+
+#stomatopoda-profile-pic {
+    width: 35%;
+    border-radius: 100%;
+    border: 3px ridge rgb(150, 0, 125);
+}
+
+article {
+    width: 75%;
+    display: inline-block;
+    
+}
+
+h1, h2, h3 {
+    font-family: 'Architects Daughter', cursive;
+    
+}
+
+p {
+    text-align: justify;
+}
+
+.curiosity-line {
+    width: 100%;
+    display: inline;
+    text-align: center;
+}
+
+.curiosity-block {
+    width: 45%;
+    display: inline-block;
+
+}
+
+aside {
+    display: inline-block;
+    width: 15%;     
+    margin-right: 5%;
+    float: right;
+    
+}
+
+.float-right {
+    float: right;
+}
+
