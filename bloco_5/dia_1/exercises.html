@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+        /*
+        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        - document.getElementById()
+        - document.getElementsByClassName()
+        - document.getElementsByTagName()
+        1. Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+        2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+        3. Crie uma função que mude a cor do quadrado vermelho para branco.
+        4. Crie uma função que corrija o texto da tag <h1>.
+        5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+        6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        */
+
+        //Exercicio 1
+        let myselfInTwoYears = "Em dois anos me vejo como um excelente desenvolvedor, com um trabalho remoto que me paga bem e me permita ter liberdade geografica"
+        let nome = "Rafael Maltez"
+
+        function mudaParagrafo(elemento, numero, texto){
+            document.getElementsByTagName(elemento)[numero].innerHTML= texto;
+        }
+
+        mudaParagrafo('p',0, myselfInTwoYears);
+
+        mudaParagrafo('p',2, nome);
+        //Exercicio 2
+
+        function coloreClasseDeVerde() {
+            document.getElementsByClassName('main-content')[0].style.backgroundColor= "rgb(76,164,109)";
+        }
+        coloreClasseDeVerde();
+
+        //Exercicio 3
+      function coloreClasseDeBranco(classe, indicedaclasse) {
+        document.getElementsByClassName(classe)[indicedaclasse].style.backgroundColor="white";
+        }
+        coloreClasseDeBranco('center-content',0);
+
+        //Exercicio 4
+
+        function corrigeTitulo() {
+            document.getElementsByClassName('title')[0].innerHTML= "Exercício 5.1 - JavaScripit"
+        }
+        corrigeTitulo();
+        
+        //Exercicio 5
+        function capitalizeTag(nomedatag, indicedatag) {
+           document.getElementsByTagName(nomedatag)[indicedatag].style.textTransform="uppercase";
+          
+        }           
+        capitalizeTag('p',0); 
+        
+
+        //Exercicio 6
+
+        function exibeConteudoTag(nomedatag) {
+            let tagParaExibir = document.getElementsByTagName(nomedatag);
+            for (i=0; i< tagParaExibir.length; i++){
+                console.log(tagParaExibir[i].innerHTML);
+            }
+        }
+
+        exibeConteudoTag('p');
+
+
+    </script>
+  </body>
+</html>
