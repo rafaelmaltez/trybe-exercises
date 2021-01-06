@@ -13,4 +13,13 @@ test('#randomRgbColor mock', () => {
     
     content.randomRgbColor();
     expect(content.randomRgbColor).toHaveBeenCalled();
+});
+
+test('#randomRgbColor with mock value "rgb(255, 255, 255)"', () => {
+    //testando se a função foi chamada e o retorno da mesma
+    content.randomRgbColor = jest.fn().mockReturnValue("rgb(255, 255, 255)");
+
+    content.randomRgbColor();
+    expect(content.randomRgbColor).toHaveBeenCalled();
+    expect(content.randomRgbColor()).toBe("rgb(255, 255, 255)");
 })
