@@ -1,4 +1,3 @@
-const { test, expect } = require('@jest/globals');
 const content = require('./content');
 
 test('#randomRgbColor', () => {
@@ -23,3 +22,23 @@ test('#randomRgbColor with mock value "rgb(255, 255, 255)"', () => {
     expect(content.randomRgbColor).toHaveBeenCalled();
     expect(content.randomRgbColor()).toBe("rgb(255, 255, 255)");
 })
+
+test('#randomRgbColor with mock and times called', () => {
+    //testando quantas vezes a função foi chamada e qual o seu retorno
+    content.randomRgbColor = jest
+        .fn()
+        .mockReturnValue('default value')
+        .mockReturnValueOnce('first call')
+        .mockReturnValueOnce('second call')
+
+    expect(content.randomRgbColor).toHaveBeenCalledTimes(0);
+
+    expect(content.randomRgbColor()).toBe('first call');
+    expect(content.randomRgbColor).toHaveBeenCalledTimes(1);
+
+    expect(content.randomRgbColor()).toBe('second call');
+    expect(content.randomRgbColor).toHaveBeenCalledTimes(2);
+
+    expect(content.randomRgbColor()).toBe('default value');
+    expect(content.randomRgbColor).toHaveBeenCalledTimes(3);
+});
