@@ -6,11 +6,14 @@ const task = (value) => {
     <li>{value}</li>
   );
 }
+
+const items = ["Finalizar módulo React", "Curso Formula Negocio Online", "Concluir treinamento Outsystems"];
+
 function App() {
 
   return (
     <div className="App">
-      {task("Finalizar módulo React")}
+      {items.map(item => task(item))}
     </div>
   );
 }
