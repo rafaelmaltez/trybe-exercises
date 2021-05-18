@@ -23,4 +23,11 @@ describe('Tipo de numero', () => {
       expect(answer).to.be.equal("neutro")
     })
   })
+  describe('se o valor passado nao for um numero', () => {
+    it('a resposta é "o valor deve ser um numero"', () => {
+      const answer = typeOfNumber('eu sou um numero');
+      expect(answer).to.be.a('string');
+      expect(answer).to.be.equal('o valor deve ser um numero');
+    })
+  })
 })
