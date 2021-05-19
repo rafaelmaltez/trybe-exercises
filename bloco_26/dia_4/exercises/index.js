@@ -36,5 +36,12 @@ app.get('/simpsons/:id', (req, res) => {
   res.status(200).send(simpson);
 });
 
+app.post('/simpsons', (req, res) => {
+  const simpsonExists = simpsons.find(simp => simp.id === req.body.id);
+  if (simpsonExists) return res.status(409).send({ "message": "id already exists" });
+  simpsons.push(req.body);
+  res.status(204).end();
+});
+
 
 app.listen(3000, () => console.log('Rodando na porta 3000'));
