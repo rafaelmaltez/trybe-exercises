@@ -9,5 +9,10 @@ app.get('/ping', (req, res) => {
   res.json({ message: 'pong' })
 });
 
+app.post('/hello', (req, res) => {
+  res.status(200);
+  res.send({ "message": `Hello, ${req.body.name}` })
+});
+
 
 app.listen(3000, () => console.log('Rodando na porta 3000'));
