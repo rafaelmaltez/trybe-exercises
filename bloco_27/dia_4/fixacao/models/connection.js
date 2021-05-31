@@ -12,7 +12,7 @@ async function connection() {
     useUnifiedTopology: true,
   })
     .then((conn) => conn.db('model_example'))
-    .then((dbschema) => {
+    .then((dbSchema) => {
       schema = dbSchema;
       return schema;
     })
