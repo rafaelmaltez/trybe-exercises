@@ -1,7 +1,7 @@
 const { expect } = require('chai');
 const sinon = require('sinon');
 const { MongoClient } = require('mongodb');
-
+const { MongoMemoryServer } = require('mongodb-memory-server');
 
 const MovieModel = require('../../models/movieModel');
 
@@ -12,17 +12,15 @@ describe('Insere um novo filme no BD', () => {
     releaseYear: 1999.,
   }
 
-  before(() => {
-    const ID_EXAMPLE = '604cb554311d68f491ba5781';
-    const connectionMock = {
-      db: async () => ({
-        collection: async () => ({
-          insertOne: async () => ({
-            insertedId: ID_EXAMPLE,
-          })
-        })
-      })
-    };
+  before(async () => {
+    const DBserver = new MongoMemoryServer();
+    const URLMock = await DBserver.getUri();
+    const connectionMock = await MongoClient
+      .connect(URLMock, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      });
+
     sinon.stub(MongoClient, 'connect').resolves(connectionMock);
   });
 
