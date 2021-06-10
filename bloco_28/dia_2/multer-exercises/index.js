@@ -10,7 +10,7 @@ const controllers = require('./controllers');
 const middlewares = require('./middlewares');
 
 const app = express();
-
+debugger
 app.use(
   cors({
     origin: `http://localhost:${PORT}`,
